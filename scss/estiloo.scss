@@ -1,0 +1,142 @@
+/*Tabla de servicios*/
+
+.Tabla{
+    height: 400px;
+    display:flex;
+    justify-content:center;
+    align-items: center; 
+    margin:0px ;
+
+        &__thestilo{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        &__tdestilo{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        &__listita{
+            list-style-type:upper-roman;
+            display: list-item;
+            color:rgb(139, 17, 84);
+        }
+}
+
+/*Comentarios*/
+.Comentarios{
+    margin-right: 70px;
+    margin-left: 80px;
+
+        &__Nombres{
+            font-family:'Josefin Sans', sans-serif ;
+            color:rgb(50, 175, 181);
+            font-size:25px;
+            text-align: center;
+            margin-top:10px;
+            margin-bottom: 0px;
+        }
+
+        &__Texto{
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 20px;
+            margin-right: 10px;
+            margin-left: 10px;
+            text-align: center;
+        }
+}
+
+/*Footer sección comentarios*/
+.Futer{
+    text-align: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,77,1) 24%, rgba(190,50,133,1) 66%, rgba(0,212,255,1) 100%);
+
+        &__Letras{
+            text-align: center;
+            letter-spacing: 0px;
+            font-family: 'Josefin Sans', sans-serif;
+            margin:20px;
+            padding: 20px;
+            color: rgb(255, 255, 255);
+            font-size:20px;
+        }
+
+}
+
+/*Lista Submenú Perros*/
+.EstiloG5{
+    background-color: rgb(146, 37, 97);
+    grid-area: EstiloG5;
+    text-align: center;
+
+    &__LetrasGrandes{
+        text-align: center;
+        letter-spacing: 0px;
+        font-family: 'Josefin Sans', sans-serif;
+        margin:20px;
+        padding: 20px;
+        color: rgb(255, 255, 255);
+        font-size:25px
+    }
+
+    &__Lista{
+        display:table;
+    }
+
+    &__Item{
+        display:table;
+        color: black;
+        font-family:'Josefin Sans', sans-serif;
+    }
+}
+
+/*Grilla del Submenú Gatos*/
+.EstiloP{
+    display:grid;
+    grid-template-columns: 30vw auto 30vw;
+    grid-template-rows: 30vw 30vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    grid-template-areas: 
+                    "EstiloPBanner EstiloPBanner EstiloPBanner"
+                    "EstiloP1      EstiloP2       EstiloP3";
+                    ;
+
+    &__1{
+        background-color: rgb(50, 175, 181);
+        grid-area: EstiloP1;
+        text-align: center;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__2{
+        grid-area: EstiloP2;
+        justify-content: center;
+        align-items:center;
+        margin-top: 5vh;
+    }
+
+    &__3{
+        background-color: rgb(167, 145, 183);
+        grid-area: EstiloP3;
+        text-align: center;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__Banner{
+        background-color: lightcyan;
+        grid-area: EstiloPBanner;
+        text-align: center;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
